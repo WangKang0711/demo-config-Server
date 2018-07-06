@@ -13,7 +13,7 @@ spring:
           username:                                     # git仓库的账号
           password:                                     # git仓库的密码
   rabbitmq:
-    host: 172.16.2.176
+    host: peer1
     port: 5672
     username: admin
     password: admin123
@@ -21,7 +21,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://172.16.2.176:8761/eureka/   ## 注册中心eurka地址
+      defaultZone: http://peer1:8761/eureka/   ## 注册中心eurka地址
   instance:
     prefer-ip-address: true
 
